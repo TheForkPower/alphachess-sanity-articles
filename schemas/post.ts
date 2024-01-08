@@ -30,7 +30,7 @@ export default defineType({
     }),
     defineField({
       name: 'slug',
-      title: 'Slug',
+      title: 'URL alias',
       type: 'slug',
       options: {
         source: 'title',
@@ -61,7 +61,7 @@ export default defineType({
               name: 'alt',
               type: 'string',
               title: 'Alternative text',
-              description: 'Important for SEO and accessiblity.',
+              description: 'Just put this here because of that damn SEO thingy',
             },
           ],
         },
@@ -71,10 +71,11 @@ export default defineType({
       name: 'excerpt',
       title: 'Excerpt',
       type: 'text',
+      description: 'NOTE: It does not show up on the actual page of the blog so you might want it to be the first paragraph of the article',
     }),
     defineField({
       name: 'coverImage',
-      title: 'Cover Image',
+      title: 'Cover Image (watch aspect Ratios)',
       type: 'image',
       options: {
         hotspot: true,
