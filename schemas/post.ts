@@ -39,6 +39,14 @@ export default defineType({
       },
       validation: (rule) => rule.required(),
     }),
+
+     defineField({
+      name: 'excerpt',
+      title: 'Blog excerpt (keep brief!)',
+      type: 'text',
+      description: 'NOTE: It does not show up on the actual page of the blog so you might want it to be the first paragraph of the article',
+    }),
+    
     defineField({
       name: 'content',
       title: 'Content',
@@ -67,12 +75,7 @@ export default defineType({
         },
       ],
     }),
-    defineField({
-      name: 'excerpt',
-      title: 'Excerpt',
-      type: 'text',
-      description: 'NOTE: It does not show up on the actual page of the blog so you might want it to be the first paragraph of the article',
-    }),
+   
     defineField({
       name: 'coverImage',
       title: 'Cover Image (watch aspect Ratios)',
